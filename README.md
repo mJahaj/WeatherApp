@@ -11,6 +11,12 @@ Date & time
 Icon
 Weather at the time
 
+#City
+City Name
+City Country
+Population
+Sunrise & Sunset
+
 #props
 
 
