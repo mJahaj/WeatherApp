@@ -11,6 +11,9 @@ Date & time
 Icon
 Weather at the time
 
+#props
+
+
 #Lists
 Flatlist
 Section List - restaurant menu, drinks...main course...{Must array of objects}
