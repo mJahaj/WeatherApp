@@ -4,6 +4,9 @@
  https://www.npmjs.com/package/react-native-vector-icons
  https://icons.expo.fyi/
 
+ #navigation -- We use tabs to navigate screens
+ https://reactnative.dev/docs/navigation
+
 
 #UpcomingWeather
 List
