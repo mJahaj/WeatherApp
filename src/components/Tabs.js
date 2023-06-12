@@ -1,10 +1,9 @@
 import React from "react";
-import { Text } from "react-native";
 import CurrentWeather from "../screens/CurrentWeather";
 import UpcomingWeather from "../screens/UpcomingWeather";
 import City from "../screens/City";
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
-import { Feather } from "@expo/vector-icons";
+import { Feather } from "@expo/vector-icons"; //<Feather>
 
 const Tab = createBottomTabNavigator(); // init Tab Object
 
@@ -14,6 +13,10 @@ const Tabs = () => {
       screenOptions={{
         tabBarActiveTintColor: "tomato",
         tabBarInactiveTintColor: "grey",
+        tabBarStyle: {backgroundColor: 'lightblue'},
+        headerStyle: {backgroundColor: 'lightblue'}, 
+        headerTitleStyle: {fontWeight: 'bold', fontSize: 25, color:'tomato'},
+        headerTitleAlign: 'center',
       }}
     >
       <Tab.Screen
@@ -61,4 +64,4 @@ const Tabs = () => {
   );
 };
 
-export default Tab;
+export default Tabs;
