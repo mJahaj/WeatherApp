@@ -8,6 +8,12 @@
  https://reactnative.dev/docs/navigation
 
 
+#@env
+https://www.npmjs.com/package/react-native-dotenv
+-> add it to babble.config.js
+-> plugins: ["module:react-native-dotenv"]
+
+
 #Geo location
 40.7032, -73.9014
 
