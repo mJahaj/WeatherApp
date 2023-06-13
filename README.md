@@ -8,6 +8,9 @@
  https://reactnative.dev/docs/navigation
 
 
+#Geo location
+40.7032, -73.9014
+
 #UpcomingWeather
 List
 Date & time
