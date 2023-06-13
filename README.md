@@ -17,6 +17,8 @@ https://www.npmjs.com/package/react-native-dotenv
 #Geo location
 40.7032, -73.9014
 
+#Render callback
+
 #UpcomingWeather
 List
 Date & time
