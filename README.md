@@ -19,6 +19,10 @@ https://www.npmjs.com/package/react-native-dotenv
 
 #Render callback
 
+#moment.js // format any data related to time and dates
+npm install moment --save   # npm
+
+
 #UpcomingWeather
 List
 Date & time
