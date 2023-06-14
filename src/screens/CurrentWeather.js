@@ -22,7 +22,7 @@ const CurrentWeather = ({ weatherData }) => {
     weather,
   } = weatherData;
 
-  const weatherCondition = weather[0].main;
+  const weatherCondition = weather[0]?.main;
 
   return (
     <SafeAreaView
@@ -66,7 +66,6 @@ const styles = StyleSheet.create({
   },
   wrapper: {
     flex: 1,
-    backgroundColor: "pink",
   },
   tempStyles: {
     color: "black",
@@ -90,10 +89,10 @@ const styles = StyleSheet.create({
     marginBottom: 40,
   },
   descripton: {
-    fontSize: 48,
+    fontSize: 43,
   },
   message: {
-    fontSize: 30,
+    fontSize: 25,
   },
 });
 

@@ -6,11 +6,12 @@ import Tabs from "./src/components/Tabs";
 import * as Location from "expo-location";
 import { WEATHER_API_KEY } from "@env";
 import { useGetWeather } from "./src/hooks/useGetWeather";
+import ErrorItem from "./src/components/ErrorItem";
 
 const App = () => {
   const [loading, error, weatherData] = useGetWeather();
 
-  if (weatherData && weatherData.list) {
+  if (weatherData && weatherData.list && !loading) {
     console.log(weatherData)
     return (
       <NavigationContainer>
@@ -20,9 +21,13 @@ const App = () => {
   }
   return (
     <View style={styles.container}>
-      <ActivityIndicator size={110} color={"blue"} />
+      {error ? (
+        <ErrorItem />
+      ) : (
+        <ActivityIndicator size={'large'} color={'blue'} />
+      )}
     </View>
-  );
+  )
 };
 
 const styles = StyleSheet.create({
